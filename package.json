@@ -1,0 +1,10 @@
+{
+  "name": "WebdriverRecorder",
+  "version": "0.1",
+  "type": "module",
+  "dependencies": {
+    "@wdio/chrome-recorder": "^0.5.2",
+    "fs": "^0.0.1-security",
+    "yargs": "^17.7.2"
+  }
+}

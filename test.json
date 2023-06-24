@@ -1,0 +1,110 @@
+{
+  "title": "Recording 16/06/2023 at 09:50:38",
+  "steps": [
+    {
+      "type": "setViewport",
+      "width": 1536,
+      "height": 792,
+      "deviceScaleFactor": 1,
+      "isMobile": false,
+      "hasTouch": false,
+      "isLandscape": false
+    },
+    {
+      "type": "navigate",
+      "url": "chrome://new-tab-page/",
+      "assertedEvents": [
+        {
+          "type": "navigation",
+          "url": "chrome://new-tab-page/",
+          "title": "New Tab"
+        }
+      ]
+    },
+    {
+      "type": "navigate",
+      "url": "https://live-uob-dev.cloud.contensis.com/study/postgraduate",
+      "assertedEvents": [
+        {
+          "type": "navigation",
+          "url": "https://live-uob-dev.cloud.contensis.com/study/postgraduate",
+          "title": ""
+        }
+      ]
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        ["section > nav"],
+        ["xpath///*[@id=\"StudyPageTitle\"]/section/nav"],
+        ["pierce/section > nav"]
+      ],
+      "offsetY": 72.39999389648438,
+      "offsetX": 573.3999938964844
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        ["aria/Course structure"],
+        ["#StudyPageTitle ul button"],
+        ["xpath///*[@id=\"StudyPageTitle\"]/section/nav/form/ul/li[2]/button"],
+        ["pierce/#StudyPageTitle ul button"],
+        ["text/Course structure"]
+      ],
+      "offsetY": 29.399993896484375,
+      "offsetX": 156.39996337890625
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        ["aria/Enter your search term"],
+        ["#search"],
+        ["xpath///*[@id=\"search\"]"],
+        ["pierce/#search"]
+      ],
+      "offsetY": 33.59999084472656,
+      "offsetX": 205.39999389648438
+    },
+    {
+      "type": "change",
+      "value": "History",
+      "selectors": [
+        ["aria/Enter your search term"],
+        ["#search"],
+        ["xpath///*[@id=\"search\"]"],
+        ["pierce/#search"]
+      ],
+      "target": "main"
+    },
+    {
+      "type": "keyDown",
+      "target": "main",
+      "key": "Enter"
+    },
+    {
+      "type": "keyUp",
+      "key": "Enter",
+      "target": "main"
+    },
+    {
+      "type": "waitForElement",
+      "assertedEvents": [
+        {
+          "type": "navigation",
+          "url": "Test",
+          "title": "Title"
+        }
+      ],
+      "target": "main",
+      "selectors": [
+        "a:nth-of-type(1) div:nth-of-type(1) > dd",
+        "xpath///*[@id=\"app-root\"]/div/div[4]/div/div/div[1]/a[1]/dl/div[1]/dd",
+        "pierce/a:nth-of-type(1) div:nth-of-type(1) > dd",
+        "text/PhD with Integrated"
+      ]
+    }
+  ]
+}
